@@ -2,7 +2,6 @@
 *.d
 
 # Dev-c++ files
-*.dev
 *.win
 
 # Object files
