@@ -15,6 +15,28 @@ void ingresarNumero(char* texto, int* numero){
 	}
 }
 
+void ingresarNumeroMayor(char* texto, int* numero,int limite){
+	printf("%s",texto);
+	int aux = scanf("%d", numero);
+	while(aux != 1 || *numero <= limite){
+		printf("\nError! No se ha ingresado un numero o caracter valido.");
+		printf("\n%s", texto);
+		fflush(stdin);
+		aux = scanf("%d", numero);
+	}
+}
+
+void ingresarNumeroMenor(char* texto, int* numero,int limite){
+	printf("%s",texto);
+	int aux = scanf("%d", numero);
+	while(aux != 1 || *numero >= limite){
+		printf("\nError! No se ha ingresado un numero o caracter valido.");
+		printf("\n%s", texto);
+		fflush(stdin);
+		aux = scanf("%d", numero);
+	}
+}
+
 /* void ingresarNumero(char* texto, float* numero){
 	printf("%s",texto);
 	int aux = scanf("%f", numero);
@@ -170,7 +192,8 @@ void mostrarResultadoEnLista(int *lista, int inicio){
     printf("[ ");
   } else if ( inicio < lista[0]){
     printf("%d, ", lista[inicio]);
-  } else if ( inicio == lista[0]){
+  } 
+  if ( inicio == lista[0]){
     printf("%d]\n", lista[inicio]);
     return;
   }

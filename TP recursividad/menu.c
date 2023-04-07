@@ -1,114 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include "menu.h"
 #include "valida.h"
-
 #include "TP_Recursividad.h"
-
-/*
-  Aca se encuentran definidos los prototipos y los codigos de las funciones del main.
-  El codigo de llamada e ingreso de datos para las funciones del TP se encuentran 
-  separado en procedimientos para que sea mas sencillo el intercambio de codigo.
-  Tambien se encuentra definida la funcion "menu" que imprime el menu en pantalla, 
-  pide el ingreso de una opcion.  
-*/
-
-int menu();
-void ejercicio1();
-void ejercicio2();
-void ejercicio3();
-void ejercicio4();
-void ejercicio5();
-void ejercicio6();
-void ejercicio7();
-void ejercicio8();
-void ejercicio9();
-void ejercicio10();
-
-int main()
-{
-    int opcion;
-	do
-	{
-		opcion = menu();
-		
-		switch (opcion)
-		{
-			case 'a':
-				system("cls");
-				ejercicio1();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'b':
-				system("cls");
-				ejercicio2();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'c':
-				system("cls");
-				ejercicio3();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'd':
-				system("cls");
-				ejercicio4();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'e':
-				system("cls");
-				ejercicio5();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'f':
-				system("cls");
-				ejercicio6();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'g':
-				system("cls");
-				ejercicio7();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'h':
-				system("cls");
-				ejercicio8();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'i':
-				system("cls");
-				ejercicio9();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'j':
-				system("cls");
-				ejercicio10();
-				printf("\n\n");
-				system("Pause");
-				break;
-			case 'q':
-				break;
-			default:
-				printf("\nOpcion incorrecta!");
-				printf("\nPresione [ENTER] para continuar");
-				getche();
-				break;
-		}
-	} while (opcion != 'q');
-	
-	printf("\n\nPrograma Finalizado.\n\n");
-	system("pause");
-	return 0;
-}
 
 int menu()
 {
@@ -135,15 +30,17 @@ int menu()
 
 void ejercicio1(){
 	
-	char texto[MAX_CARACTERES];
-	printf("\nIngrese un palindromo:");
-	ingresarCadena(texto);
+	char texto[100];
+	char textoSinEspacios[100];
 	
-	//char textoSinEspacios[100];
-	//memset(textoSinEspacios, 0, sizeof(textoSinEspacios));
+	memset(textoSinEspacios, 0, sizeof(textoSinEspacios));
+	
+	printf("\nIngrese un palindromo:");
+	
+	ingresarCadena(texto);
 	//eliminaEspacios(texto, textoSinEspacios);
 	
-	if (palindromo(texto)){
+	if (palindromo(textoSinEspacios,0,strlen(textoSinEspacios)-1)){
 		printf("\nEs un palindromo!");
 	}
 	else {
@@ -185,8 +82,8 @@ void ejercicio4(){
 
 void ejercicio5(){
 	
-	char cadena[MAX_CARACTERES]="";
-	char respuesta[MAX_CARACTERES] ="";
+	char cadena[100]="";
+	char respuesta[100] ="";
 	
     printf("\nIntroduce un numero: ");
     cadenaDeNumeros(cadena);
@@ -198,20 +95,19 @@ void ejercicio5(){
 void ejercicio6(){
 	int n;
 	
-    n = ingresarNumeroEntre("\nIntroduce el nivel a mostrar [1-50]: ",1,MAX_NIVEL_MAFIA);
+    n = ingresarNumeroEntre("\nIntroduce el nivel a mostrar [1-40]: ",1,40);
     
-	printf("%s",vistaFrontalNivel(n));
+	vistaFrontalNivel(n);
 }
 
 void ejercicio7(){
-    char cadena[MAX_CARACTERES];
+	 char cadena[100];
 
     printf("\nIntroduce una cadena de texto: ");
     ingresarOndaDigital(cadena);
 
-    printf("\nResultado de la onda digital: %s",ondaDigital(cadena));
-    
-    free(cadena);
+    printf("\nResultado de la onda digital: ");
+    ondaDigital(cadena);
 }
 
 void ejercicio8(){
@@ -224,15 +120,15 @@ void ejercicio8(){
 	subconjuntosQueSumanN(lista,lenLista,7);*/
 	
 	printf("Ingrese una lista de numeros separados por coma: ");
-	char listaDeNumeros[MAX_LISTA];
+	char listaDeNumeros[300];
 	fflush(stdin);
 	gets(listaDeNumeros);
 	
-	int listaDeEnteros[MAX_LISTA_NUMEROS];
-	int len = separarEnteros(listaDeNumeros,listaDeEnteros);
-	
 	int suma;
-	ingresarNumero("Ingrese el valor de la suma: ", &suma);	
+	ingresarNumero("Ingrese el valor de la suma: ", &suma);
+	
+	int listaDeEnteros[50];
+	int len = separarEnteros(listaDeNumeros,listaDeEnteros);
 	
 	printf("\nCantidad de numeros ingresados: %d.\n",len);
 	
@@ -254,11 +150,9 @@ void ejercicio9(){
 void ejercicio10(){
 	int n1, n2;
 	ingresarNumero("\nIngrese un numero:", &n1);
-	ingresarNumeroMayor("\nIngrese la bomba (mayor a 0): ", &n2,0);	
+	ingresarNumero("\nIngrese la bomba:", &n2);
+	printf("\nResultado : ");
 	int *resultado = explosion(n1,n2);
-	printf("\nResultado :");
-	//mostrarResultadoEnLista(resultado);
-	mostrarResultadoEnLista(resultado,0);
+	mostrarResultadoEnLista(resultado);
 	free(resultado);
 } 
-

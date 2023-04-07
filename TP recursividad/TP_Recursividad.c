@@ -281,12 +281,10 @@ bool divisiblePor7(long n){
 void explotaEn(int numero, int bomba, int* resultado, int* i){
 	int n1,n2;
 	if (numero<=bomba){
-    // Si el numero es menor o igual a la bomba  lo guardo en la cadena resultado y 
+    // Si el numero es menor o igual a la bomba  lo guardo en la cadena resultado 
     // y guardo el tamaño del arreglo en la posicion 0.
         (*i)++;               
 		resultado[*i]= numero;
-		/* Se agrega el valor del siguiente de i en la posicion 0,
-		   Para asi poder recorrerlo en un bucle. */
 		resultado[0]= *i;
 	} else {
     // se realizan las operaciones matematicas para ver en los numeros que explota la bomba
@@ -307,6 +305,6 @@ int* explosion(int numero, int bomba){
 */
     int *resultado = (int *)malloc(sizeof(int) * 100);
     int indice = 0;
-	explotaEn(numero,bomba,resultado, &indice);
+    explotaEn(numero,bomba,resultado, &indice);
 	return resultado;
 }

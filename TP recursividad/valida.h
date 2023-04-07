@@ -12,6 +12,10 @@ void ingresarNumero(char* texto, int* numero);
 
 //void ingresarNumero(char* texto, float* numero);
 
+void ingresarNumeroMayor(char* texto, int* numero,int limite);
+
+void ingresarNumeroMenor(char* texto, int* numero,int limite);
+
 int ingresarNumeroEntre(char* texto, int nInf, int nSup);
 
 bool cadenaVacia( char* cadena);
