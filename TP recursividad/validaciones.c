@@ -1,5 +1,5 @@
 #include "valida.h"
-
+#include <stdlib.h>
 bool validaRango(int numero, int nInf, int nSup){
 	return (numero >= nInf && numero <= nSup);
 }
