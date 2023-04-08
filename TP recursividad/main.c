@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
+#include <conio.h>
 #include "valida.h"
-
-#include "TP_Recursividad.h"
+#include "TP_Recursividad.c"
 
 /*
   Aca se encuentran definidos los prototipos y los codigos de las funciones del main.
