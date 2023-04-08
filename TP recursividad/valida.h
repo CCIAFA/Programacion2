@@ -8,6 +8,8 @@
 
 bool validaRango(int numero, int nInf, int nSup);
 
+int esNumero(char* cadena);
+
 void ingresarNumero(char* texto, int* numero);
 
 //void ingresarNumero(char* texto, float* numero);

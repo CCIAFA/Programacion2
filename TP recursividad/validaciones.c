@@ -1,7 +1,18 @@
 #include "valida.h"
 #include <stdlib.h>
+
 bool validaRango(int numero, int nInf, int nSup){
 	return (numero >= nInf && numero <= nSup);
+}
+
+int esNumero(char* cadena){
+   int i;  
+   for(i = 0; cadena[i]; i++){ 
+      if(isdigit(cadena[i])== 0){
+         return 0;
+      }
+   }
+   return 1;
 }
 
 void ingresarNumero(char* texto, int* numero){
@@ -220,13 +231,19 @@ int separarEnteros(char* lista, int* resultado){
 	char *aux = strtok(lista, delimitador);
 	if ( aux != NULL){
 		while (aux != NULL){
-			resultado[i] = (int)strtol(aux,NULL,10);
+            if (esNumero(aux)){
+			   resultado[i] = (int)strtol(aux,NULL,10);
+               i++;
+            } else {
+               printf("%s se descarta por no ser un numero.\n",aux);
+            }
 			aux = strtok(NULL, delimitador);
-			i++;
+			
 		}
 	}
 	return i;
 }
+
 
 
 

@@ -106,7 +106,10 @@ float division(float m, float n){
     // If para determinar el signo del resultado, ya que la division se realiza con 
     // numeros positivos. La condicion es un XOR. 
 		signo = -1;
-	}
+	} else if (n == 0) {
+        printf("\nERROR! division por 0.\n");
+        return 0;
+    } 
 	return signo*division2(abs(m),abs(n),DECIMALES,INCREMENTO);
 }
 
