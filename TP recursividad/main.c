@@ -155,9 +155,9 @@ void ejercicio2(){
 	
 	int n1, n2;
 	
-	printf("Ingrese numeros menores a 44.000\n\n");
-	ingresarNumeroMenor("\nIngrese un numero:", &n1,44000);
-	ingresarNumeroMenor("\nIngrese un segundo numero:", &n2,44000);
+	printf("Ingrese numeros menores a 44.000 y mayores a -44.000\n\n");
+	n1= ingresarNumeroEntre("\nIngrese un numero:", -44000,44000);
+	n2= ingresarNumeroEntre("\nIngrese un segundo numero:", -44000,44000);
 	
 	printf("\nResultado : %d",producto(n1,n2));
 }
