@@ -262,7 +262,9 @@ bool divisiblePor7(long n){
 /*
   Indica si el numero ingresado "n" es multiplo de 7.
 */
-	int aux;
+	//Si el numero es negativo para entrar a la funcion recursiva se toma el valor absoluto.
+    if (n<0) divisiblePor7(abs(n));
+    int aux;
 	if(n<=70){
     // si n es menor a 70, se pregunta si el resto de su division por 7 es 0,
     // es decir si es divisible por 7 y retorna ese valor logico.
