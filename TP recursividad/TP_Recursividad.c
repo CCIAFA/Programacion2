@@ -1,5 +1,5 @@
 #include "TP_Recursividad.h"
-#include "valida.h"
+#include "validaciones.c"
 
 // Ejercicio 1
 
@@ -25,7 +25,7 @@ bool esPalindromo(char *palabra, int inicio, int fin){
 bool palindromo(char* palabra){
 /*
   Funcion para llamar a la funcion recursiva, solo recive la palabra y le agrega
-  el inicio en 0 y el tamaño de la cadena.
+  el inicio en 0 y el tamaÃ±o de la cadena.
 */
      int finPalabra = strlen(palabra);
      return esPalindromo(palabra,0,finPalabra-1);
@@ -175,7 +175,7 @@ void ondaDigitalRecursiva(char *cadena, char* resultado) {
 // Esta funcion recibe la cadena de "l" y "h", y la cadena "resultado" para guardar
 // el dibujo de la onda.
     if (strlen(cadena) == 0) {
-    // Si el tamaño de la cadena es 0, llego al final y termina la funcion.
+    // Si el tamaÃ±o de la cadena es 0, llego al final y termina la funcion.
         return;
     } else {
         if (cadena[0] == 'l') {
@@ -219,7 +219,7 @@ void encontrarSubconjuntosQueSumanN(int lista[], int suma, int subconjunto[], in
                      el arreglo "subconjunto[], que es donde se van guardando los elementos del subconjunto armado.
                      el entero "inicio", indica el inicio de donde se tiene que procesar "lista[]".
                      el entero "fin", indica el fin de la cadena "lista[]".
-                     el entero "finSubconjunto", indica el tamaño del arreglo de enteros "subconjuntos[]".
+                     el entero "finSubconjunto", indica el tamaÃ±o del arreglo de enteros "subconjuntos[]".
   La funcion basicamente busca todas las conbinaciones de subconjuntos y evalua los que la suma de sus elementos
   es igual a "suma", si es asi muestra el subconjunto en pantalla.
 */
@@ -237,7 +237,7 @@ void encontrarSubconjuntosQueSumanN(int lista[], int suma, int subconjunto[], in
 
 int sumaSubconjunto(int subconjunto[], int finSubconjunto) {
 /*
-  Funcion recursiva que recibe el arreglo "subconjunto" y su tamaño "finSubconjunto" y 
+  Funcion recursiva que recibe el arreglo "subconjunto" y su tamaÃ±o "finSubconjunto" y 
   retorna el valor de la suma de sus elementos.
 */
     if (finSubconjunto == -1) {
@@ -249,7 +249,7 @@ int sumaSubconjunto(int subconjunto[], int finSubconjunto) {
 void subconjuntosQueSumanN(int lista[], int tamLista, int suma) {
 /*
   Funcion que llama a la fn recursica, se agregan los parametros del arreglo de enteros
-  "subconjuntos", el inicio 0 y el tamaño del subconjunto en -1 para que cuando se agregue
+  "subconjuntos", el inicio 0 y el tamaÃ±o del subconjunto en -1 para que cuando se agregue
   el primer elemento quede con el indice 0.
 */
     int subconjunto[tamLista];
@@ -284,7 +284,7 @@ void explotaEn(int numero, int bomba, int* resultado, int* i){
 	int n1,n2;
 	if (numero<=bomba){
     // Si el numero es menor o igual a la bomba  lo guardo en la cadena resultado 
-    // y guardo el tamaño del arreglo en la posicion 0.
+    // y guardo el tamaÃ±o del arreglo en la posicion 0.
         (*i)++;               
 		resultado[*i]= numero;
 		resultado[0]= *i;
@@ -302,8 +302,8 @@ void explotaEn(int numero, int bomba, int* resultado, int* i){
 int* explosion(int numero, int bomba){
 /*
   Funcion que llama la fn recursiva, crea el arreglo de enteros "resultado" y el "indice"
-  que es el tamaño de la variable "resultado" para realizar el llamado.
-  En la posicion 0 de "resultado" se guarda el tamaño de este.
+  que es el tamaÃ±o de la variable "resultado" para realizar el llamado.
+  En la posicion 0 de "resultado" se guarda el tamaÃ±o de este.
 */
     int *resultado = (int *)malloc(sizeof(int) * 100);
     int indice = 0;
