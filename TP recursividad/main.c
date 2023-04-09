@@ -253,7 +253,7 @@ void ejercicio9(){
 
 void ejercicio10(){
 	int n1, n2;
-	ingresarNumero("\nIngrese un numero:", &n1);
+	ingresarNumeroMayor("\nIngrese un numero:", &n1,0);
 	ingresarNumeroMayor("\nIngrese la bomba (mayor a 0): ", &n2,0);	
 	int *resultado = explosion(n1,n2);
 	printf("\nResultado :");
