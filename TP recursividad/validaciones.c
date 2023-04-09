@@ -26,6 +26,17 @@ void ingresarNumero(char* texto, int* numero){
 	}
 }
 
+void ingresarNumeroSin0(char* texto, int* numero){
+	printf("%s",texto);
+	int aux = scanf("%d", numero);
+	while(aux != 1||*numero==0){
+		printf("\nError! El caracter ingresado no es valido.");
+		printf("\n%s", texto);
+		fflush(stdin);
+		aux = scanf("%d", numero);
+	}
+}
+
 void ingresarNumeroMayor(char* texto, int* numero,int limite){
 	printf("%s",texto);
 	int aux = scanf("%d", numero);
