@@ -176,7 +176,7 @@ void ejercicio4(){
 	int n1,n2;
 	
 	ingresarNumero("\nIngrese el dividendo:", &n1);
-	ingresarNumero("\nIngrese el divisor:", &n2);
+	ingresarNumeroSin0("\nIngrese el divisor:", &n2);
 	
     result = division(n1,n2);
     printf("%f", result); 
