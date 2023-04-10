@@ -1,5 +1,5 @@
 #include "TP_Recursividad.h"
-#include "validaciones.c"
+
 
 // Ejercicio 1
 
@@ -263,14 +263,15 @@ bool divisiblePor7(long n){
   Indica si el numero ingresado "n" es multiplo de 7.
 */
 	//Si el numero es negativo para entrar a la funcion recursiva se toma el valor absoluto.
-    if (n<0) divisiblePor7(abs(n));
     int aux;
-	if(n<=70){
-    // si n es menor a 70, se pregunta si el resto de su division por 7 es 0,
-    // es decir si es divisible por 7 y retorna ese valor logico.
-		return (n % 7 == 0);
+    if (n<0) {
+       divisiblePor7(abs(n));
+    } else if(n<10){
+    // si n es menor a 10, se pregunta si el numero es 7 o 0,
+    // es decir se concluye que es multiplo de 7 y retorna ese valor logico.
+		return (n == 0 || n == 7);
 	} else {
-    // si no es menor a 70, le quita el ultimo digito al numero y a lo que queda
+    // si no es menor a 10, le quita el ultimo digito al numero y a lo que queda
     // le resta el doble de ese digito y vuelve a llamar la funcion con el resultado.
 		aux = n % 10;
 		n = ((n-aux)/10) - 2*aux;

@@ -3,7 +3,7 @@
 #include <string.h>
 #include <conio.h>
 #include "valida.h"
-#include "TP_Recursividad.c"
+#include "TP_Recursividad.h"
 
 /*
   Aca se encuentran definidos los prototipos y los codigos de las funciones del main.
@@ -244,7 +244,7 @@ void ejercicio9(){
 	int n;
     ingresarNumero("\nIntroduce un numero: ", &n);
     if (divisiblePor7(n)){
-		printf("\nEs un divisible por 7!");
+		printf("\nEs divisible por 7!");
 	}
 	else {
 		printf("\nNo es divisible por 7!");
