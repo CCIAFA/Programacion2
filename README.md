@@ -2,6 +2,10 @@
 
 2023
 
-Alumno: Ciafardini, Juan Carlos,
-        Peterson, Nicholas
+Alumnos: 
+<Ul>
+    <li>Ciafardini, Juan Carlos</li>
+    <li>Peterson, Nicholas</li>
+</Ul>
+
 Universidad Nacional de Lujan
