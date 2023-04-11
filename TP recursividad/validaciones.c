@@ -8,8 +8,10 @@ bool validaRango(int numero, int nInf, int nSup){
 int esNumero(char* cadena){
    int i;  
    for(i = 0; cadena[i]; i++){ 
-      if(isdigit(cadena[i])== 0){
-         return 0;
+      if(isdigit(cadena[i])== 0 || cadena[i]=='-'){
+         if(cadena[i]!='-'){
+            return 0;
+         }
       }
    }
    return 1;
