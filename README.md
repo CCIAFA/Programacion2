@@ -4,11 +4,11 @@
 
 Alumnos: 
 <Ul>
-    <li>Ciafardini, Juan Carlos</li>
-    <li>Peterson, Nicholas</li>
-    <Li>Apfelbaum, Brian Emanuel</li>
-    <Li>Ynsaurralde, Jonas benjamín</li>
-    <Li>Gnazzo Pintos, Nicolas</li>
+    <li>Ciafardini, Juan Carlos (127.399)</li>
+    <li>Peterson, Nicholas (legajo)</li>
+    <Li>Apfelbaum, Brian Emanuel (182.878)</li>
+    <Li>Ynsaurralde, Jonas benjamín (192.142)</li>
+    <Li>Gnazzo Pintos, Nicolas (190.196)</li>
 </Ul>
 
 Universidad Nacional de Lujan
