@@ -1,3 +1,12 @@
+#include <stdio.h>
+#include <stdbool.h>
+#include <string.h>
+#include <ctype.h>
+#include "punto4.h"
+#include "valida.h"
+
+
+
 void cargarLista(Lista lista){
 bool continuar=true;
 TipoElemento x;
