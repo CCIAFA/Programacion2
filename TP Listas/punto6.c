@@ -12,7 +12,7 @@ void cargarLista(Lista lista){
   TipoElemento x;
   int clave = 0;
   while(continuar && !(l_es_llena(lista))){
-    ingresarNumeroNoRep("\ningrese una clave:",&clave);
+    ingresarNumeroNoRep("\ningrese una clave:",&clave,lista);
     x=te_crear(clave);
     l_agregar(lista,x);
     printf("\n ingrese 0 para salir o cualquier otro numero para seguir cargando:");
