@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include <math.h>
 #include "punto5.h"
+#include "valida.h"
 
 void cargarPolinomio(Lista lista){
   int continuar = 1;
@@ -11,11 +12,9 @@ void cargarPolinomio(Lista lista){
   int clave = 0;
   printf("\nIngrese los coeficientes comenzando por el termino independiente.\n");
   while(continuar && !(l_es_llena(lista))){
-    printf("\ningrese una clave:");
-    scanf("%i",&clave);
+    ingresarNumero("\ningrese una clave:",&clave);
     x=te_crear(clave);
     l_agregar(lista,x);
-    fflush(stdin);
     printf("\n ingrese 0 para salir o cualquier otro numero para seguir cargando:");
     scanf("%i",&continuar);
 
@@ -64,12 +63,9 @@ int main() {
     resultados=l_crear();
     printf("Cargue el polinomio:\n");
     cargarPolinomio(polinomio);
-    printf("\ningrese inicio del intervalo:");
-    scanf("%f",&inicio);
-    printf("\ningrese fin del intervalo:");
-    scanf("%f",&fin);
-    printf("\ningrese el paso:");
-    scanf("%f",&paso);
+    ingresarNumeroFloat("\ningrese inicio del intervalo:"&inicio);
+    ingresarNumeroFloat("\ningrese fin del intervalo:",&fin);
+    ingresarNumeroFloat("\ningrese el paso:",&paso);
     printf("\nCoeficientes: \n");
     l_mostrarLista(polinomio);
     resultados = calculoDeFuncionEnRango(polinomio,resultados,inicio,fin,paso);
