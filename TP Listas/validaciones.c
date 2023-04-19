@@ -1,5 +1,33 @@
 #include "valida.h"
 #include <stdlib.h>
+#include "Tipo_Elemento.h"
+
+bool esRepetido(Lista lista,int* clave){
+    bool resultado=true;
+	int num;
+    TipoElemento x;
+	num=(int)*clave;
+    x=l_buscar(lista,num);
+    if (x== NULL){
+        resultado= false;
+    }
+    return resultado;
+}
+
+void ingresarNumeroNoRep(char* texto, int* numero,Lista lista){
+	printf("%s",texto);
+	int aux = scanf("%d", numero);
+	bool rep=true;
+	rep=esRepetido(lista,numero);
+	
+	while((aux != 1)||(rep)){
+		printf("\nError! ingrese un numero no repetido.");
+		printf("\n%s", texto);
+		fflush(stdin);
+		aux = scanf("%d", numero);
+		rep=esRepetido(lista,numero);
+	}
+}
 
 bool validaRango(int numero, int nInf, int nSup){
 	return (numero >= nInf && numero <= nSup);
