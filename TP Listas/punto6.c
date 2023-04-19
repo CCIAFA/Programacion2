@@ -3,6 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "punto6.h"
+#include "valida.h"
 
 
 
@@ -11,8 +12,7 @@ void cargarLista(Lista lista){
   TipoElemento x;
   int clave = 0;
   while(continuar && !(l_es_llena(lista))){
-    printf("\ningrese una clave:");
-    scanf("%i",&clave);
+    ingresarNumero("\ningrese una clave:",&clave);
     x=te_crear(clave);
     l_agregar(lista,x);
     fflush(stdin);
@@ -63,10 +63,10 @@ int main() {
     lista2=l_crear();
     printf("cargue la primer lista\n");
     cargarLista(lista1);
-    system("cls");
+    //system("cls");
     printf("cargue la segunda lista\n");
     cargarLista(lista2);
-    system("cls");
+    //system("cls");
     longitud1=l_longitud(lista1);
     longitud2=l_longitud(lista2);
     l_mostrarLista(lista1);
@@ -80,6 +80,6 @@ int main() {
     }else{
         printf("\nERROR! Lista 2 es mas grande que Lista 1.\n");
     }
-    system("pause");
+    //system("pause");
     return 0;
 }
