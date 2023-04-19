@@ -5,6 +5,10 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
+#include "listas.h"
+bool esRepetido(Lista lista,int* clave);
+
+void ingresarNumeroNoRep(char* texto, int* numero,Lista lista);
 
 bool validaRango(int numero, int nInf, int nSup);
 
