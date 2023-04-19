@@ -15,7 +15,6 @@ void cargarLista(Lista lista){
     ingresarNumeroNoRep("\ningrese una clave:",&clave);
     x=te_crear(clave);
     l_agregar(lista,x);
-    fflush(stdin);
     printf("\n ingrese 0 para salir o cualquier otro numero para seguir cargando:");
     scanf("%i",&continuar);
   }
