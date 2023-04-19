@@ -3,7 +3,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "punto6.h"
-
+#include "valida.h"
 
 
 void cargarLista(Lista lista){
@@ -11,11 +11,9 @@ void cargarLista(Lista lista){
   TipoElemento x;
   int clave = 0;
   while(continuar && !(l_es_llena(lista))){
-    printf("\ningrese una clave:");
-    scanf("%i",&clave);
+    ingresarNumero("\ningrese una clave:",&clave);
     x=te_crear(clave);
     l_agregar(lista,x);
-    fflush(stdin);
     printf("\n ingrese 0 para salir o cualquier otro numero para seguir cargando:");
     scanf("%i",&continuar);
   }
@@ -65,7 +63,7 @@ int main() {
            printf("\nLista 2  NO es multiplo de Lista 1.\n");
         }
     }else{
-        printf("\nERROR! El tamaño de la lista deben ser iguales\n");
+        printf("\nERROR! El tamaÃ±o de la lista deben ser iguales\n");
     }
     system("pause");
     return 0;
