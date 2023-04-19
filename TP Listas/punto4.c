@@ -13,11 +13,9 @@ void cargarLista(Lista lista){
   int c = 1;
   int clave = 0;
   while(continuar && !(l_es_llena(lista))){
-    printf("\ningrese una clave:");
-    scanf("%i",&clave);
+    ingresarNumero("\ningrese una clave:",&clave);
     x=te_crear(clave);
     l_agregar(lista,x);
-    fflush(stdin);
     printf("\n ingrese 0 para salir o cualquier otro numero para seguir cargando:");
     scanf("%i",&c);
 
