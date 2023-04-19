@@ -61,7 +61,7 @@ void ingresarNumeroMenor(char* texto, int* numero,int limite){
 	}
 }
 
-/* void ingresarNumero(char* texto, float* numero){
+void ingresarNumeroFloat(char* texto, float* numero){
 	printf("%s",texto);
 	int aux = scanf("%f", numero);
 	while(aux != 1){
@@ -70,7 +70,7 @@ void ingresarNumeroMenor(char* texto, int* numero,int limite){
 		fflush(stdin);
 		aux = scanf("%f", numero);
 	}
-} */
+}
 
 int ingresarNumeroEntre(char* texto, int nInf, int nSup){
 	int numero;

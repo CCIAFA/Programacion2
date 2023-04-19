@@ -14,7 +14,7 @@ void ingresarNumero(char* texto, int* numero);
 
 void ingresarNumeroSin0(char* texto, int* numero); 
 
-//void ingresarNumero(char* texto, float* numero);
+void ingresarNumeroFloat(char* texto, float* numero);
 
 void ingresarNumeroMayor(char* texto, int* numero,int limite);
 
