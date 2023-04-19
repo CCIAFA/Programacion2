@@ -70,6 +70,6 @@ int main() {
     l_mostrarLista(resultados);
 
 
-    system("pause");
+    //system("pause");
     return 0;
 }
