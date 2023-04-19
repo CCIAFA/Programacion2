@@ -57,19 +57,26 @@ Lista calculoDeFuncionEnRango(Lista polinomio, Lista listaResultado, float inici
 
 
 int main() {
+    float inicio,fin,paso;
     Lista polinomio;
     polinomio=l_crear();
     Lista resultados;
     resultados=l_crear();
     printf("Cargue el polinomio:\n");
     cargarPolinomio(polinomio);
+    printf("\ningrese inicio del intervalo:");
+    scanf("%f",&inicio);
+    printf("\ningrese fin del intervalo:");
+    scanf("%f",&fin);
+    printf("\ningrese el paso:");
+    scanf("%f",&paso);
     printf("\nCoeficientes: \n");
     l_mostrarLista(polinomio);
-    resultados = calculoDeFuncionEnRango(polinomio,resultados,-1,1,0.5);
+    resultados = calculoDeFuncionEnRango(polinomio,resultados,inicio,fin,paso);
     printf("\nResultados: \n");
     l_mostrarLista(resultados);
 
 
-    //system("pause");
+    system("pause");
     return 0;
 }
