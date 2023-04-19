@@ -63,7 +63,7 @@ int main() {
     resultados=l_crear();
     printf("Cargue el polinomio:\n");
     cargarPolinomio(polinomio);
-    ingresarNumeroFloat("\ningrese inicio del intervalo:"&inicio);
+    ingresarNumeroFloat("\ningrese inicio del intervalo:",&inicio);
     ingresarNumeroFloat("\ningrese fin del intervalo:",&fin);
     ingresarNumeroFloat("\ningrese el paso:",&paso);
     printf("\nCoeficientes: \n");
