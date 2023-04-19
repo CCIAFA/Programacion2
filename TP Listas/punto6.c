@@ -70,14 +70,20 @@ int main() {
     longitud2=l_longitud(lista2);
     l_mostrarLista(lista1);
     l_mostrarLista(lista2);
-    if (longitud1>=longitud2){
+    if (longitud1>longitud2){
         if (esSublista(lista1,lista2)){
            printf("\nLista 2 es sublista de Lista 1.\n");
-        }else {
-           printf("\nLista 2  NO es sublista de Lista 1.\n");
+        }else{
+            printf("\nninguna es sublista de la otra.\n");
+        }
+    }else if (longitud1<longitud2){
+        if (esSublista(lista2,lista1)){
+           printf("\nLista 1 es sublista de Lista 2.\n");
+        }else{
+            printf("\nninguna es sublista de la otra.\n");
         }
     }else{
-        printf("\nERROR! Lista 2 es mas grande que Lista 1.\n");
+        printf("\nninguna es sublista de la otra.\n");
     }
     //system("pause");
     return 0;
