@@ -8,24 +8,25 @@
 
 
 void cargarLista(Lista lista){
-bool continuar=true;
-TipoElemento x;
-int c=1;
-int clave=0;
-while(continuar && !(l_es_llena(lista))){
-printf("\ningrese una clave:");
-scanf("%i",&clave);
-x=te_crear(clave);
-l_agregar(lista,x);
-fflush(stdin);
-printf("\n ingrese 0 para salir o cualquier otro numero para seguir cargando:");
-scanf("%i",&c);
+  bool continuar = true;
+  TipoElemento x;
+  int c = 1;
+  int clave = 0;
+  while(continuar && !(l_es_llena(lista))){
+    printf("\ningrese una clave:");
+    scanf("%i",&clave);
+    x=te_crear(clave);
+    l_agregar(lista,x);
+    fflush(stdin);
+    printf("\n ingrese 0 para salir o cualquier otro numero para seguir cargando:");
+    scanf("%i",&c);
 
-if(c==0){
-  continuar= false;
+    if(c==0){
+      continuar= false;
+    }
+  }
 }
-}
-}
+
 int compararListas(Lista lista1,Lista lista2){
     int resultado,i,longitudLista;
     int listaMayor1,listaMayor2,sonIguales;
@@ -40,15 +41,13 @@ int compararListas(Lista lista1,Lista lista2){
       x2=siguiente(ite2);
       if (x1->clave > x2->clave){
         listaMayor1=listaMayor1+1;
-      }else if (x1->clave < x2->clave)
-      {
+      }else if (x1->clave < x2->clave){
         listaMayor2=listaMayor2+1;
       }
     }
     if(listaMayor1>listaMayor2){
       resultado=1;
-    }else if (listaMayor1<listaMayor2)
-    {
+    }else if (listaMayor1<listaMayor2){
       resultado=2;
     }else{
       resultado=3;
