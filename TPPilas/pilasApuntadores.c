@@ -71,7 +71,7 @@ if(p_es_vacia(pila)){
     }
 
 Pila Paux = p_crear();
-TipoElemento X = crear_te(0);
+TipoElemento X = te_crear(0);
 printf("Contenido de la pila: ");
 // Recorro la pila desopilándola y pasándola al auxiliar
 while (p_es_vacia(pila) != true) {
