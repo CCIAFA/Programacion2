@@ -28,7 +28,7 @@ pila->tope = nuevo_nodo;
 
 TipoElemento p_desapilar (Pila pila) {
 if (p_es_vacia(pila)) {
-        return;
+        return NULL;
     }    
 struct Nodo *tope_actual = pila->tope;
 TipoElemento elemento = tope_actual->datos;
