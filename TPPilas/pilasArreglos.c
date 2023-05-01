@@ -41,7 +41,7 @@ TipoElemento p_tope(Pila pila){
 }
 
 bool p_es_vacia(Pila pila){
-    return (pila->tope=0);
+    return (pila->tope==0);
 }
 
 bool p_es_llena(Pila pila){
