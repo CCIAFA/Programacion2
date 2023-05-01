@@ -45,8 +45,18 @@ struct Nodo *tope_actual = pila->tope;
 return tope_actual->datos;
 }
 
+int longitud(Pila pila){
+    int i =0;
+    struct Nodo *N=pila->tope;
+    while(N!=NULL){
+        i++;
+        N =N->siguiente;
+    }
+    return i;
+}
+
 bool p_es_llena (Pila pila) {
-return(pila->tope==TAMANIO_MAXIMO);    
+return(longitud(pila)==TAMANIO_MAXIMO);    
 }
 
 bool p_es_vacia (Pila pila) {
