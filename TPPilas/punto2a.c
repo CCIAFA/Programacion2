@@ -21,7 +21,7 @@ bool buscar_clave (Pila pila, int n){
 	}
 	
 	// recupero los elementos de la pila auxiliar a la original y la dejo como estaba
-	p_intercambiar (Pila pila, Pila Paux);
+	p_intercambiar (pila, Paux);
 
 	return resultado;    
 }
