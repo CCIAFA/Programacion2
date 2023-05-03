@@ -6,7 +6,7 @@
 bool buscar_clave (Pila pila, int n){
 	Pila Paux = p_crear(Paux);
 	TipoElemento te;
-	resultado = False;
+	bool resultado = False;
 
     // ciclo que mueve los elementos a la pila auxiliar, similar a un p_intercambiar
 	while (!p_es_vacia(pila)) {
