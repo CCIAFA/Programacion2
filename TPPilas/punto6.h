@@ -1,5 +1,5 @@
-#ifndef Punto2
-#define Punto2
+#ifndef Punto6
+#define Punto6
 
 #include <stdio.h>
 #include <stdbool.h>
@@ -8,4 +8,4 @@
 
 Pila eliminiarOcurrencias(Pila pila,int elemento);
 
-#endif //Punto2
+#endif //Punto6
