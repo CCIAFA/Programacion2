@@ -22,3 +22,26 @@ void p_cargar(Pila pila, int cantidad){
         i++;
     }
 }
+
+bool p_buscar_clave (Pila pila, int n){
+	Pila Paux = p_crear(Paux);
+	TipoElemento te;
+	bool resultado = false;
+
+    // ciclo que mueve los elementos a la pila auxiliar, similar a un p_intercambiar
+	while (!p_es_vacia(pila)) {
+		te = p_desapilar(pila);
+		p_apilar(Paux, te);
+    
+		// condicional que se encontro el elemento buscado
+		if (te->clave == n){
+			resultado = true;
+			break;
+    	}
+	}
+	
+	// recupero los elementos de la pila auxiliar a la original y la dejo como estaba
+	p_intercambiar (pila, Paux);
+
+	return resultado;    
+}
