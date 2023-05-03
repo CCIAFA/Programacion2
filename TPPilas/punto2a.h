@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "pilas.h"utilidadesPilas.h
+#include "pilas.h"
 #include "utilidadesPilas.h"
 #include "Tipo_Elemento.h"
 
