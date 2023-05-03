@@ -36,4 +36,5 @@ int main(){
     p_mostrar(res);
     printf("\npila original\n");
     p_mostrar(p);
+    printf("\ncomplejidad o(n)\n");
 }
