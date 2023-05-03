@@ -67,4 +67,5 @@ int main(){
     p_mostrar(p);
     printf("\npila2 original\n");
     p_mostrar(p2);
+    printf("\ncomplejidad o(n^2)\n");
 }
