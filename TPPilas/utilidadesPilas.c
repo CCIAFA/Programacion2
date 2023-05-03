@@ -15,6 +15,7 @@ void p_cargar(Pila pila, int cantidad){
     TipoElemento clave;
     int i = 0;
     while (!p_es_llena(pila) && i < cantidad) {
+        clave=te_crear(0);
         printf("Ingrese la clave a apilar: ");
         scanf("%d", &clave->clave);
         p_apilar(pila, clave);
