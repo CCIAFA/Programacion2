@@ -5,11 +5,6 @@
 #include "punto2f.h"
 #include "valida.h"
 #include "utilidadesPilas.h"
-#include "pilasArreglos.c"
-#include "Tipo_Elemento.c"
-#include "utilidadesPilas.c"
-#include "validaciones.c"
-
 
 int p_longituds(Pila pila){
 int i;
