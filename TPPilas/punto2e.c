@@ -5,10 +5,7 @@
 #include "punto2e.h"
 #include "utilidadesPilas.h"
 #include "valida.h"
-#include "pilasArreglos.c"
-#include "Tipo_Elemento.c"
-#include "utilidadesPilas.c"
-#include "validaciones.c"
+
 
 Pila p_duplicar(Pila pila){
     TipoElemento clave;
