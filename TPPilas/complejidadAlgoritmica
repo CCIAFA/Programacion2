@@ -1,5 +1,6 @@
 punto3=o(n)
 punto5=o(n)
+punto4=o(n)
 punto6=o(n)
 punto7=o(n^2)
 punto8=o(n^2)
