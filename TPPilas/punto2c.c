@@ -5,10 +5,6 @@
 #include "punto2c.h"
 #include "valida.h"
 #include "utilidadesPilas.h"
-#include "pilasArreglos.c"
-#include "Tipo_Elemento.c"
-#include "utilidadesPilas.c"
-#include "validaciones.c"
 
 
 
