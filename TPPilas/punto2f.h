@@ -6,6 +6,6 @@
 #include <string.h>
 #include "pilas.h"
 
-Pila p_longituds(Pila pila);
+int p_longituds(Pila pila);
 
 #endif //Punto2
