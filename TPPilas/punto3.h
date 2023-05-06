@@ -1,6 +1,6 @@
 #ifndef Punto3
 #define Punto3
-
+#include "Tipo_Elemento.h"
 #include <stdio.h>
 #include <stdbool.h>
 #include <string.h>
