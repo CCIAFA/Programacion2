@@ -7,5 +7,6 @@
 #include "pilas.h"
 
 Pila eliminiarOcurrencias(Pila pila,int elemento);
+Pila eliminarOcurrenciasRec(Pila pila, int elemento);
 
 #endif //Punto6
