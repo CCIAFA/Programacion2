@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include "punto2a.h"
+#include "valida.h"
 
 bool buscar_clave (Pila pila, int n){
 	Pila Paux = p_crear(Paux);
@@ -24,4 +25,21 @@ bool buscar_clave (Pila pila, int n){
 	p_intercambiar (pila, Paux);
 
 	return resultado;    
+}
+
+int main() {
+    int clave;
+    Pila pila1;
+    bool encontrado;
+    pila1=p_crear();
+    ingresarNumero("\ningrese la cantidad de elementos que quiera cargar: ",&clave);
+    p_cargar(pila1,clave);
+    ingresarNumero("\ningrese el elemento a buscar: ",&clave);
+    encontrado= buscar_clave(pila1,clave);
+    if(encontrado){
+        printf("la clave se encuentra en la pila");
+    }else{
+        printf("la clave no se encuentra la pila");
+    }
+    
 }
