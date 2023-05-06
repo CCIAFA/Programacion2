@@ -4,10 +4,7 @@
 #include <ctype.h>
 #include "punto2f.h"
 #include "valida.h"
-#include "pilasArreglos.c"
-#include "Tipo_Elemento.c"
-#include "utilidadesPilas.c"
-#include "validaciones.c"
+
 
 char* pasar_base(int n,int b){
     char* numero=(char*)calloc(30,1);
