@@ -4,10 +4,8 @@
 #include <ctype.h>
 #include "punto2b.h"
 #include "utilidadesPilas.h"
-#include "pilasArreglos.c"
-#include "Tipo_Elemento.c"
-#include "utilidadesPilas.c"
-#include "validaciones.c"
+#include "valida.h"
+
 
 Pila p_insertar(Pila pila,int pos,int x){
     TipoElemento clave;
