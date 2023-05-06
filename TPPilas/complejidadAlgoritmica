@@ -1,5 +1,5 @@
 punto3=o(n)
-punto4=0(log n)
+punto4=o(log n)
 punto5=o(n)
 punto6=o(n)
 punto6Recursivo=o(n)
