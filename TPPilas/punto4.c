@@ -37,5 +37,5 @@ int main() {
     ingresarNumero("\ningrese la base: ",&base);
     resultado=pasar_base(numero,base);
     printf("numero convertido: %s",resultado);
-    printf("complejidad o(n)");
+    printf("complejidad o(log n");
 }
