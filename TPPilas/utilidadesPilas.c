@@ -45,3 +45,58 @@ bool p_buscar_clave (Pila pila, int n){
 
 	return resultado;    
 }
+TipoElemento p_traer_clave (Pila pila, int n){
+	Pila Paux = p_crear(Paux);
+	TipoElemento te,resultado;
+    // ciclo que mueve los elementos a la pila auxiliar, similar a un p_intercambiar
+	while (!p_es_vacia(pila)) {
+		te = p_desapilar(pila);
+		// condicional que se encontro el elemento buscado
+		if (te->clave == n){
+			resultado = te;
+			break;
+    	}else resultado=NULL;
+		p_apilar(Paux, te);//si no es el elemento buscado se apila en la pila auxiliar
+	}
+	// recupero los elementos de la pila auxiliar a la original y la dejo como estaba
+	p_intercambiar (pila, Paux);
+
+	return resultado;    
+}
+void p_mostrar_todo(Pila pila){
+    if(p_es_vacia(pila)){
+        printf("PILA VACIA \n");
+        return;
+    }
+Pila Paux=p_crear();
+TipoElemento X=te_crear(0);
+printf("Contenido de la pila: ");
+
+// Recorro la pila desopilándola y pasándola al auxiliar
+while (p_es_vacia(pila) != true) {
+    X = p_desapilar(pila);
+    printf("%d-%d,", X->clave,X->valor);
+    p_apilar(Paux, X);
+}
+// Recorro la pila auxiliar para pasarla a la original (o bien construyo la utilidad intercambiar)
+while (p_es_vacia(Paux) != true) {
+    X = p_desapilar(Paux);
+    p_apilar(pila, X);
+}
+printf("\n");
+}
+
+int p_longitud(Pila pila){
+int i;
+Pila paux;
+paux=p_crear();
+i=0;
+TipoElemento x;
+while(!p_es_vacia(pila)){
+	x=p_desapilar(pila);
+	p_apilar(paux,x);
+	i=i+1;
+}
+p_intercambiar(pila,paux);
+return i;
+}
