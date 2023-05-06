@@ -6,7 +6,7 @@
 #include <stdbool.h>
 #include "pilas.h"
 #include "utilidadesPilas.h"
-#include "Tipo_Elemento.h"
+
 
 bool buscar_clave (Pila pila, int n);
 
