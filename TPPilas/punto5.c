@@ -5,10 +5,7 @@
 #include "punto2f.h"
 #include "valida.h"
 #include "utilidadesPilas.h"
-#include "pilasArreglos.c"
-#include "Tipo_Elemento.c"
-#include "utilidadesPilas.c"
-#include "validaciones.c"
+
 
 Pila p_invertir(Pila pila){
     TipoElemento clave,clave2;
