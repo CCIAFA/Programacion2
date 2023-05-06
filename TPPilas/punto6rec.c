@@ -5,12 +5,6 @@
 #include "punto6.h"
 #include "utilidadesPilas.h"
 #include "valida.h"
-#include "pilasArreglos.c"
-#include "Tipo_Elemento.c"
-#include "utilidadesPilas.c"
-#include "validaciones.c"
-
-
 
 
 Pila eliminarOcurrenciasRec(Pila pila, int elemento) {
