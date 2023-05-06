@@ -75,7 +75,7 @@ printf("Contenido de la pila: ");
 // Recorro la pila desopilándola y pasándola al auxiliar
 while (p_es_vacia(pila) != true) {
     X = p_desapilar(pila);
-    printf("%d-%d,", X->clave,X->valor);
+    printf("%d-%d,", X->clave,*(int*)X->valor);
     p_apilar(Paux, X);
 }
 // Recorro la pila auxiliar para pasarla a la original (o bien construyo la utilidad intercambiar)
