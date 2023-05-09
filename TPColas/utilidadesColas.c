@@ -16,7 +16,7 @@ void c_cargar(Cola cola, int cantidad){
     int i = 0;
     while (!c_es_llena(cola) && i < cantidad) {
         clave=te_crear(0);
-        printf("Ingrese la clave a apilar: ");
+        printf("Ingrese la clave a encolar: ");
         scanf("%d", &clave->clave);
         c_encolar(cola, clave);
         i++;
