@@ -54,7 +54,7 @@ if(c_es_vacia(cola)){
     return;
 }
 Cola Caux = c_crear();
-TipoElemento X = crear_te(0);
+TipoElemento X = te_crear(0);
 printf("Imprimiendo las Claves de la Cola \n");
 // La cola se debe desencolar y guardar en una auxiliar
 while (c_es_vacia(cola) != true) {
