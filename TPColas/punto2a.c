@@ -6,10 +6,7 @@
 #include <ctype.h>
 #include "punto2a.h"
 #include "valida.h"
-#include "colas_punteros.c"
-#include "utilidadesColas.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
+
 bool c_buscar_clave (Cola cola, int n){
 	Cola Caux = c_crear();
 	TipoElemento te;
