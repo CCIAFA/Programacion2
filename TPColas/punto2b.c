@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
-#include "punto2a.h"
+#include "punto2b.h"
 #include "valida.h"
 
 
