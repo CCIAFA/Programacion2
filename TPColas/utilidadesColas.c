@@ -22,3 +22,41 @@ void c_cargar(Cola cola, int cantidad){
         i++;
     }
 }
+
+int c_longitud(Cola cola){
+int i;
+Cola caux;
+caux=c_crear();
+i=0;
+TipoElemento x;
+while(!c_es_vacia(cola)){
+	x=c_desencolar(cola);
+	c_encolar(caux,x);
+	i=i+1;
+}
+c_intercambiar(cola,caux);
+return i;
+}
+
+bool c_buscar_clave (Cola cola, int n){
+	Cola Caux = c_crear();
+	TipoElemento te;
+	bool resultado = false;
+
+    // ciclo que mueve los elementos a la cola auxiliar, similar a un p_intercambiar
+	while (!c_es_vacia(cola)) {
+		te = c_desencolar(cola);
+		c_encolar(Caux, te);
+    
+		// condicional que se encontro el elemento buscado
+		if (te->clave == n){
+			resultado = true;
+			break;
+    	}
+	}
+	
+	// recupero los elementos de la cola auxiliar a la original y la dejo como estaba
+	c_intercambiar (cola, Caux);
+
+	return resultado;    
+}
