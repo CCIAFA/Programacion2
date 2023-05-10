@@ -8,7 +8,7 @@
 #include "valida.h"
 
 
-Cola c_duplicar(Cola cola){
+Cola c_duplica(Cola cola){
     TipoElemento clave;
     int longitud;
     longitud=c_longitud(cola);
