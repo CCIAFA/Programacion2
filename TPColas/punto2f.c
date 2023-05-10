@@ -32,9 +32,8 @@ Cola c_invertir(Cola cola){
 
 
 int main() {
-    int clave,longitud1,longitud2;
+    int clave;
     Cola cola1,cres;
-    bool sonIguales;
     cola1=c_crear();
     cres=c_crear();
     ingresarNumero("\ningrese la cantidad de elementos que quiera cargar: ",&clave);
