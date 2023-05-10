@@ -6,10 +6,7 @@
 #include <ctype.h>
 #include "punto2e.h"
 #include "valida.h"
-#include "colas_punteros.c"
-#include "utilidadesColas.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
+
 
 Cola c_duplicar(Cola cola){
     TipoElemento clave;
