@@ -6,11 +6,7 @@
 #include <ctype.h>
 #include "punto2f.h"
 #include "valida.h"
-#include "colas_punteros.c"
-#include "utilidadesColas.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-#include "pilasArreglos.c"
+
 
 Cola c_invertir(Cola cola){
     TipoElemento clave;
