@@ -7,7 +7,7 @@
 #include "punto2a.h"
 #include "valida.h"
 
-bool c_buscar_clave (Cola cola, int n){
+bool c_buscar_claves (Cola cola, int n){
 	Cola Caux = c_crear();
 	TipoElemento te;
 	bool resultado = false;
@@ -20,7 +20,6 @@ bool c_buscar_clave (Cola cola, int n){
 		// condicional que se encontro el elemento buscado
 		if (te->clave == n){
 			resultado = true;
-			break;
     	}
 	}
 	
@@ -38,7 +37,7 @@ int main() {
     ingresarNumero("\ningrese la cantidad de elementos que quiera cargar: ",&clave);
     c_cargar(cola1,clave);
     ingresarNumero("\ningrese el elemento a buscar: ",&clave);
-    res=c_buscar_clave(cola1,clave);
+    res=c_buscar_claves(cola1,clave);
     if(res){
         printf("el elemento esta en la cola");
     }else{
