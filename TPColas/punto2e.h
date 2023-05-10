@@ -6,6 +6,6 @@
 #include <string.h>
 #include "colas.h"
 
-Cola c_duplicar(Cola cola);
+Cola c_duplica(Cola cola);
 
 #endif //Punto2
