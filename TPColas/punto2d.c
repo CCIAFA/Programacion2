@@ -6,10 +6,7 @@
 #include <ctype.h>
 #include "punto2d.h"
 #include "valida.h"
-#include "colas_punteros.c"
-#include "utilidadesColas.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
+
 
 int c_longituds(Cola cola){
 int i;
