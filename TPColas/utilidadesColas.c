@@ -51,7 +51,6 @@ bool c_buscar_clave (Cola cola, int n){
 		// condicional que se encontro el elemento buscado
 		if (te->clave == n){
 			resultado = true;
-			break;
     	}
 	}
 	
