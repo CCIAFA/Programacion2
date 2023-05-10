@@ -6,11 +6,6 @@
 #include <ctype.h>
 #include "punto2f.h"
 #include "valida.h"
-#include "colas_punteros.c"
-#include "utilidadesColas.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-
 
 bool c_son_iguales(Cola c1,Cola c2){
     TipoElemento clave1,clave2;
