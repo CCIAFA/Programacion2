@@ -4,7 +4,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
-#include "punto2f.h"
+#include "punto3.h"
 #include "valida.h"
 
 bool c_son_iguales(Cola c1,Cola c2){
