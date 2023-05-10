@@ -6,6 +6,6 @@
 #include <string.h>
 #include "colas.h"
 
-bool c_buscar_clave (Cola cola, int n);
+bool c_buscar_claves (Cola cola, int n);
 
 #endif //Punto2
