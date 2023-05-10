@@ -6,10 +6,7 @@
 #include <ctype.h>
 #include "punto2c.h"
 #include "valida.h"
-#include "colas_punteros.c"
-#include "utilidadesColas.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
+
 
 void c_eliminar(Cola cola,int elemento){
     TipoElemento clave;
