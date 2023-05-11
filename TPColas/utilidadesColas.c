@@ -59,3 +59,61 @@ bool c_buscar_clave (Cola cola, int n){
 
 	return resultado;    
 }
+
+int c_buscar_posicion (Cola cola, int n){
+	Cola Caux = c_crear();
+	TipoElemento te;
+	int i=1;
+	int resultado=-1;
+    // ciclo que mueve los elementos a la cola auxiliar, similar a un p_intercambiar
+	while (!c_es_vacia(cola)) {
+		te = c_desencolar(cola);
+		c_encolar(Caux, te);
+    
+		// condicional que se encontro el elemento buscado
+		if (te->clave == n){
+			resultado = i;
+    	}
+		i++;
+	}
+	
+	// recupero los elementos de la cola auxiliar a la original y la dejo como estaba
+	c_intercambiar (cola, Caux);
+
+	return resultado;    
+}
+
+Cola c_duplicar(Cola cola){
+    TipoElemento clave;
+    int longitud;
+    longitud=c_longitud(cola);
+    Cola caux ,caux2;
+    caux=c_crear();
+    caux2=c_crear();
+    while(!c_es_vacia(cola)){
+        clave=c_desencolar(cola);
+        c_encolar(caux,clave);
+        c_encolar(caux2,clave);
+    }
+    c_intercambiar(cola,caux);
+    c_intercambiar(caux,caux2);
+    return caux;
+}
+
+bool c_tiene_repetidos(Cola cola){
+    TipoElemento clave;
+    Cola caux;
+    bool res,bandera;
+	bandera=false;
+    caux=c_crear();
+    while(!c_es_vacia(cola)){
+        clave=c_desencolar(cola);
+        c_encolar(caux,clave);
+        res=c_buscar_clave(cola,clave->clave);
+		if(res){
+			bandera=true;
+		}
+    }
+    c_intercambiar(cola,caux);
+    return bandera;
+}
