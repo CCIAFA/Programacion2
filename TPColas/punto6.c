@@ -1,5 +1,5 @@
 #include "utilidadesColas.h"
-#include "../TPPilas/utilidadesPilas.h"
+#include "utilidadesPilas.h"
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -7,14 +7,6 @@
 #include <ctype.h>
 #include "punto6.h"
 #include "valida.h"
-#include "colas_punteros.c"
-#include "utilidadesColas.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-#include "pilasArreglos.c"
-#include  "listas_arreglos.c"
-#include "utilidadesPilas.c"
-
 
 void l_mostrarTodo(Lista lista){
  printf("Contenido de la lista: ");
