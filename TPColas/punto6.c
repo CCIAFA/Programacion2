@@ -16,7 +16,7 @@ void l_mostrarTodo(Lista lista){
     printf("\n");
  
 }
-//falta validar si vienen de distintos tamaños 
+
 Lista valores_comunes(Cola cola,Pila pila){
     Cola caux;
     Pila paux;
