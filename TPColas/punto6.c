@@ -77,24 +77,22 @@ int main() {
     bool col,pil;
     cola1=c_crear();
     pila=p_crear();
+    printf("cargar cola");
     ingresarNumero("\ningrese la cantidad de elementos que quiera cargar: ",&clave);
-    c_cargar(cola1,clave);
+    c_cargar_no_repetidos(cola1,clave);
+    printf("cargar pila");
     ingresarNumero("\ningrese la cantidad de elementos que quiera cargar: ",&clave);
-    p_cargar(pila,clave);
+    p_cargar_no_repetidos(pila,clave);
     col=c_tiene_repetidos(cola1);
     pil=p_tiene_repetidos(pila);
-    if(!col && !pil){
-        lista=valores_comunes(cola1,pila);
-        printf("cola original:\n");
-        c_mostrar(cola1);
-        printf("pila original:\n");
-        p_mostrar(pila);
-        printf("---numero:posicion pila,posicion cola-\n");
-        l_mostrarTodo(lista);
-        printf("complejidad o(n^2)");   
-    }else{
-        printf("la cola o la pila tienen elementos repetidos");
-    }
-    
+    lista=valores_comunes(cola1,pila);
+    printf("cola original:\n");
+    c_mostrar(cola1);
+    printf("pila original:\n");
+    p_mostrar(pila);
+    printf("---numero:posicion pila,posicion cola-\n");
+    l_mostrarTodo(lista);
+    printf("complejidad o(n^2)");   
 }
+
 
