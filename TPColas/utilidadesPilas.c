@@ -142,3 +142,22 @@ int p_buscar_posicion (Pila pila, int n){
 
 	return resultado;    
 }
+
+void p_cargar_no_repetidos(Pila pila, int cantidad){
+    TipoElemento clave;
+    int i = 0;
+	bool encontrado;
+    while (!p_es_llena(pila) && i < cantidad) {
+        clave=te_crear(0);
+        printf("Ingrese la clave a apilar: ");
+        scanf("%d", &clave->clave);
+		encontrado=p_buscar_clave(pila,clave->clave);
+		if(!encontrado){
+			p_apilar(pila, clave);
+        	i++;	
+		}else{
+			printf("no puede ingresar elementos repetidos\n");
+		}
+        
+    }
+}
