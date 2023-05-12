@@ -9,5 +9,6 @@ TipoElemento p_traer_clave (Pila pila, int n);
 void p_mostrar_todo(Pila pila);
 int p_longitud(Pila pila);
 bool p_tiene_repetidos(Pila pila);
-int p_buscar_posicion (Pila pila, int n)
+int p_buscar_posicion (Pila pila, int n);
+void p_cargar_no_repetidos(Pila pila, int cantidad);
 #endif 
