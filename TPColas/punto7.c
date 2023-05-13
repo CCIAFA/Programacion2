@@ -130,7 +130,7 @@ int main() {
     c_cargar(cola3,clave);
     ingresarNumero("\ningrese el tiempo: ",&clave);
     tiempo=clave;
-    atender_clientes2(cola1,cola2,cola3,tiempo);
+    atender_clientes(cola1,cola2,cola3,tiempo);
     printf("cola1\n");
     c_mostrar(cola1);
     printf("cola2\n");
