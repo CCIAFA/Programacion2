@@ -43,4 +43,5 @@ int main() {
     c_mostrar(cola1);
     printf("cola sin repetidos:\n");
     c_mostrar(cres);
+    printf("complejidad O(n^2)");
 }
