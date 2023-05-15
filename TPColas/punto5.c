@@ -6,58 +6,6 @@
 #include <ctype.h>
 #include "punto5.h"
 #include "valida.h"
-#include "colas_punteros.c"
-#include "utilidadesColas.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-
-//el programa solo funciona con el primer elemento y este se pierde en la cola original
-//ahora tener en cuenta que se pueden dividir por si mismos
-void c_buscar_divisores2(Cola cola){
-    Cola caux,copia;
-    TipoElemento clave,divisor;
-    int longitud,i,acumulador;
-    bool primero =true;
-    longitud=c_longitud(cola);
-    caux=c_crear();
-    i=0;
-    
-    while(i<longitud){
-        if(primero){
-        divisor=c_desencolar(cola);//tomo el primer elemento y lo llamo divisor
-        c_encolar(caux,divisor);//revisar esto//encolo el primer elemento
-        
-        primero=false;  
-        }else{
-            if (acumulador==longitud-1){//si se dividio todos los elementos es divisor total
-                
-                printf("%d es divisor total\n",divisor->clave);
-                divisor=c_recuperar(cola);
-            }else if (acumulador>=longitud/2){//si se dividio mas de la mitad es divisor parcial
-                divisor=c_recuperar(cola);
-                printf("%d es divisor parcial\n",divisor->clave);
-            }    
-        }
-        
-        acumulador=0;
-        while(!c_es_vacia(cola)){
-            clave=c_desencolar(cola);//tomo el siguiente elemento de la cola
-            c_encolar(caux,clave);
-            
-            if(clave!=NULL){
-              if(clave->clave %  divisor->clave == 0){//hago la division si es entero lo acumulo
-                acumulador=1+acumulador;
-              }  
-            }
-           
-        }
-        i++;
-        c_intercambiar(cola,caux);
-    }
-    c_intercambiar(cola,caux);
-    //clave=c_desencolar(cola);
-    //c_encolar(cola,clave);
-}
 
 void c_buscar_divisores(Cola cola) {
     Cola copia = c_crear();
