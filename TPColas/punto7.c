@@ -128,7 +128,7 @@ int main() {
     printf("cola3");
     ingresarNumero("\ningrese la cantidad de elementos que quiera cargar: ",&clave);
     c_cargar(cola3,clave);
-    ingresarNumero("\ningrese el tiempo: ",&clave);
+    ingresarNumeroMayor("\ningrese el tiempo: ",&clave,0);
     tiempo=clave;
     atender_clientes(cola1,cola2,cola3,tiempo);
     printf("cola1\n");
