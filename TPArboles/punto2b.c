@@ -4,11 +4,6 @@
 #include <string.h>
 #include <ctype.h>
 #include "punto2b.h"
-#include "../TPListas/listas_arreglos.c"
-#include "arbol-binario.c"
-#include "Tipo_Elemento.c"
-#include "nodo.c"
-#include "utilidadesArboles.c"
 
 void nodosint(NodoArbol nodo,Lista l,ArbolBinario a){
     TipoElemento x;
