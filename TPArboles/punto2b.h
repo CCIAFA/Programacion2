@@ -1,5 +1,5 @@
-#ifndef punto2a_H
-#define punto2a_H
+#ifndef punto2b_H
+#define punto2b_H
 #include <stdbool.h>
 #include "arbol-binario.h"
 #include "../TPListas/listas.h"
