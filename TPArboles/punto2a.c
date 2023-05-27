@@ -4,12 +4,6 @@
 #include <string.h>
 #include <ctype.h>
 #include "punto2a.h"
-#include "../TPListas/listas_arreglos.c"
-#include "arbol-binario.c"
-#include "Tipo_Elemento.c"
-#include "nodo.c"
-
-
 
 
 
