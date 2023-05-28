@@ -5,12 +5,7 @@
 #include <ctype.h>
 #include "punto2c.h"
 #include "utilidadesListas.h"
-#include "../TPListas/listas_arreglos.c"
-#include "arbol-binario.c"
-#include "Tipo_Elemento.c"
-#include "nodo.c"
-#include "utilidadesArboles.c"
-#include "../TPListas/utilidadesListas.c"
+
 void buscar_ocurrencias_int(NodoArbol nodo, int clave, Lista ocurrencias) {
     TipoElemento x;
     if (nodo == NULL) {
