@@ -5,12 +5,6 @@
 #include <ctype.h>
 #include "punto3.h"
 #include "valida.h"
-#include "arbol-binario.c"
-#include "Tipo_Elemento.c"
-#include "nodo.c"
-#include "utilidadesArboles.c"
-#include "validaciones.c"
-
 
 void buscar_padreint(NodoArbol nodo, int clave) {
     if (nodo == NULL) {
