@@ -1,4 +1,4 @@
-#include "nodo.h"
+#include "D:\Mario\Prog_2_2009\2023\TADs\Arboles\nodo.h"
 #include "arbol-avl.h"
 
 static const int TAMANIO_MAXIMO = 100;
@@ -53,7 +53,7 @@ NodoArbol avl_crear_nodo(TipoElemento te) {
     na->datos = te;
     na->hi = NULL;
     na->hd = NULL;
-
+    na->FE = 0;
     return na;
 }
 
