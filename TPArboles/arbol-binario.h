@@ -3,7 +3,7 @@
 
 #include <stdbool.h>
 #include "nodo.h"
-#include "tipo_elemento.h"
+#include "Tipo_Elemento.h"
 
 struct ArbolBinarioRep;
 typedef struct ArbolBinarioRep *ArbolBinario;
