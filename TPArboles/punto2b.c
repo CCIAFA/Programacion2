@@ -4,6 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "punto2b.h"
+#include "utilidadesArboles.h"
 
 void nodosint(NodoArbol nodo,Lista l,ArbolBinario a){
     TipoElemento x;
@@ -32,17 +33,9 @@ int main() {
     TipoElemento x;
     NodoArbol n;
     Lista l;
-    x=te_crear(10);
+
     a=a_crear();
-    a_establecer_raiz(a,x);
-    x=te_crear(20);
-    n=a_conectar_hd(a,a_raiz(a),x);
-    x=te_crear(25);
-    a_conectar_hd(a,n,x);
-    x=te_crear(5);
-    n=a_conectar_hi(a,a_raiz(a),x);
-    x=te_crear(1);
-    a_conectar_hi(a,n,x);
+    a=a_crear();
     l=nodos(a);
     printf("LISTADO DE NODOS :\n");
     l_mostrarLista(l);
