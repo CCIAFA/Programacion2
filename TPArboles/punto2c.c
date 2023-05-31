@@ -5,7 +5,7 @@
 #include <ctype.h>
 #include "punto2c.h"
 #include "utilidadesListas.h"
-
+#include "valida.h"
 void buscar_ocurrencias_int(NodoArbol nodo, int clave, Lista ocurrencias) {
     TipoElemento x;
     if (nodo == NULL) {
@@ -34,19 +34,12 @@ int main() {
     ArbolBinario a;
     TipoElemento x;
     NodoArbol n;
+    int clave;
     Lista l;
-    x=te_crear(10);
     a=a_crear();
-    a_establecer_raiz(a,x);
-    x=te_crear(20);
-    n=a_conectar_hd(a,a_raiz(a),x);
-    x=te_crear(25);
-    a_conectar_hd(a,n,x);
-    x=te_crear(20);
-    n=a_conectar_hi(a,a_raiz(a),x);
-    x=te_crear(1);
-    a_conectar_hi(a,n,x);
-    l=a_buscar_ocurrencias(a,20);
+    cargar_arbol(a); 
+    ingresarNumero("\ningrese el numero que quiere ver las ocurrencias: ",&clave);
+    l=a_buscar_ocurrencias(a,clave);
     printf("LISTADO DE NODOS :\n");
     l_mostrarTodo(l);
    printf("\ncomplejidad o(n)");
