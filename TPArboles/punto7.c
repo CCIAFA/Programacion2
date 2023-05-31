@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
-#include "punto4.h"
+#include "punto7.h"
 #include "valida.h"
 
 bool a_equivalente_int(NodoArbol nodo1, NodoArbol nodo2) {
