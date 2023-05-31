@@ -34,7 +34,11 @@ int a_altura(ArbolBinario a){
     alturaint(a_raiz(a),&alt,0);
     return alt;
 }
-
+int avl_altura(ArbolAVL avl){
+    int alt =0;
+    alturaint(avl_raiz(avl),&alt,0);
+    return alt;
+}
 NodoArbol buscar_nodo(NodoArbol nodo, int clave) {
     if (nodo == NULL || nodo->datos->clave == clave) {
         return nodo;
