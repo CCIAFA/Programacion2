@@ -6,9 +6,6 @@
 #include "punto4.h"
 #include "valida.h"
 
-#include "../TPListas/utilidadesListas.c"
-
-
 void hojasint(NodoArbol nodo,int *cont){
     TipoElemento x;
     
@@ -157,8 +154,6 @@ int main() {
     ingresarNumero("\ningrese el nodo: ",&clave);
     cont=an_hojas(a);
     printf("cantidad de hojas: %d\n",cont);
-    i=an_altura(a);
-    printf("la altura es: %d\n",i);
     n=an_padre(a,clave);
     if(n!=NULL){
         printf("el padre es %d\n",n_recuperar(n)->clave);  
