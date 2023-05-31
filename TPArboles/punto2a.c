@@ -4,7 +4,7 @@
 #include <string.h>
 #include <ctype.h>
 #include "punto2a.h"
-
+#include "utilidadesArboles.h"
 
 
 void hojasint(NodoArbol nodo,Lista l){
