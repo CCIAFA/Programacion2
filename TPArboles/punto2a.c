@@ -32,15 +32,8 @@ int main() {
     TipoElemento x;
     NodoArbol n;
     Lista l;
-    x=te_crear(10);
     a=a_crear();
-    a_establecer_raiz(a,x);
-    x=te_crear(20);
-    n=a_conectar_hd(a,a_raiz(a),x);
-    x=te_crear(25);
-    a_conectar_hd(a,n,x);
-    x=te_crear(5);
-    n=a_conectar_hi(a,a_raiz(a),x);
+    cargar_arbol(a);
     l=hojas(a);
     printf("LISTADO DE HOJAS:\n");
     l_mostrarLista(l);
