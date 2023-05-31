@@ -5,14 +5,9 @@
 #include <ctype.h>
 #include "punto4.h"
 #include "valida.h"
-#include "arbol-binario.c"
-#include "Tipo_Elemento.c"
-#include "nodo.c"
-#include "utilidadesArboles.c"
-#include "validaciones.c"
+
 #include "../TPListas/utilidadesListas.c"
-#include "../TPListas/listas_arreglos.c"
-#include "../TPColas/colas_punteros.c"
+
 
 void hojasint(NodoArbol nodo,int *cont){
     TipoElemento x;
