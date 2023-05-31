@@ -3,14 +3,8 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
-#include "punto4.h"
+#include "punto10.h"
 #include "valida.h"
-#include "arbol-binario-busqueda.c"
-#include "arbol-avl.c"
-#include "Tipo_Elemento.c"
-#include "nodo.c"
-#include "utilidadesArboles.c"
-#include "validaciones.c"
 
 
 NodoArbol crearNodo(int dato) {
