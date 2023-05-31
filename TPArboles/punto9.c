@@ -5,14 +5,6 @@
 #include <ctype.h>
 #include "punto9.h"
 
-#include "arbol-binario.c"
-#include "arbol-avl.c"
-#include "Tipo_Elemento.c"
-#include "nodo.c"
-#include "utilidadesArboles.c"
-#include "validaciones.c"
-
-
 void copiar_arbol_avl(NodoArbol nodo, ArbolAVL avl) {
     if (nodo == NULL) {
         return;
