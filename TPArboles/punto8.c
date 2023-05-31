@@ -5,13 +5,6 @@
 #include <ctype.h>
 #include "punto4.h"
 #include "valida.h"
-#include "arbol-binario.c"
-#include "Tipo_Elemento.c"
-#include "nodo.c"
-#include "utilidadesArboles.c"
-#include "validaciones.c"
-#include "../TPListas/listas_arreglos.c"
-
 
 int altura_int(NodoArbol n) {
     if (n == NULL) {
