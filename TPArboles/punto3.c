@@ -162,19 +162,9 @@ int main() {
     NodoArbol n;
     int clave,i;
     ingresarNumero("\ningrese el nodo: ",&clave);
-    x=te_crear(10);
+    
     a=a_crear();
-    a_establecer_raiz(a,x);
-    x=te_crear(20);
-    n=a_conectar_hd(a,a_raiz(a),x);
-    x=te_crear(25);
-    a_conectar_hd(a,n,x);
-    x=te_crear(5);
-    n=a_conectar_hi(a,a_raiz(a),x);
-    x=te_crear(1);
-    a_conectar_hi(a,n,x);
-    x=te_crear(4);
-    a_conectar_hd(a,n,x);
+    cargar_arbol(a);
     a_buscar_padre(a,clave);
     a_buscar_hijos(a,clave);
     a_buscar_hermano(a,clave);
