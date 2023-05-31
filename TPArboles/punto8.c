@@ -3,7 +3,7 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
-#include "punto4.h"
+#include "punto8.h"
 #include "valida.h"
 
 int altura_int(NodoArbol n) {
