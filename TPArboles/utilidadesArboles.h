@@ -3,6 +3,7 @@
 #include <stdbool.h>
 #include "arbol-binario.h"
 #include "arbol-avl.h"
+#include "arbol-binario-busqueda.h"
 
 void in_orden(NodoArbol N);
 int a_altura(ArbolBinario a);
