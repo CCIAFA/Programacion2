@@ -122,7 +122,6 @@ Lista an_anchura(ArbolBinario a) {
         while (!c_es_vacia(c)) {
             x = c_desencolar(c);
             n = (NodoArbol)x->valor;
-            printf("%d ", n_recuperar(n)->clave);
             l_agregar(l,n->datos);
             // Enqueue los hijos (nodos izquierdos) del nodo actual
             NodoArbol hijo = n_hijoizquierdo(n);
@@ -133,6 +132,7 @@ Lista an_anchura(ArbolBinario a) {
             }
         }
     }
+    return l;
 }
 
 int main() {
