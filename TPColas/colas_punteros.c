@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-static const int TAMANIO_MAXIMO = 10;
+
 
 struct Nodo{
     TipoElemento datos;
