@@ -11,4 +11,5 @@ void c_encolar(Cola cola, TipoElemento elemento);
 TipoElemento c_desencolar(Cola cola);
 TipoElemento c_recuperar (Cola cola);
 void c_mostrar(Cola cola);
+static const int TAMANIO_MAXIMO = 11;
 #endif // COLAS_H
