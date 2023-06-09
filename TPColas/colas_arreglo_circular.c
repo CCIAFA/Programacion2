@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
-static const int TAMANIO_MAXIMO = 11;
+
 struct ColaRep {
 TipoElemento *valores;
 unsigned int frente;
