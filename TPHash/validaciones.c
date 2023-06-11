@@ -266,7 +266,7 @@ bool validarNumero6Digitos(int numero) {
     }
     
     // Validar si tiene 6 dígitos
-    if (contador == 6) {
+    if (contador > 5 && contador <7) {
         return true;
     } else {
         return false;
