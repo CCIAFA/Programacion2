@@ -52,4 +52,6 @@ void mostrarSubconjuntoEnPantalla(int* subconjunto, int finSubconjunto);
 int divisionEntera(int n1, int n2);
 
 int separarEnteros(char* lista, int* resultado);
+
+bool validarNumero6Digitos(int numero);
 #endif // Valida
