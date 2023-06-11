@@ -10,4 +10,5 @@ int c_buscar_posicion (Cola cola, int n);
 Cola c_duplicar(Cola cola);
 bool c_tiene_repetidos(Cola cola);
 void c_cargar_no_repetidos(Cola cola, int cantidad);
+void c_cargar_mayores_no_rep(Cola cola, int cantidad,int limite);
 #endif 
