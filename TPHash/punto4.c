@@ -4,10 +4,6 @@
 #include "tabla_hash.h"
 #include "valida.h"
 #include "punto4.h"
-#include "tabla_hash_lista_colisiones.c"
-#include "listas_arreglos.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
 
 #define TAMANO_TABLA 20
 
