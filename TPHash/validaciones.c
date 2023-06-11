@@ -255,3 +255,21 @@ int separarEnteros(char* lista, int* resultado){
 	return i;
 }
 
+bool validarNumero6Digitos(int numero) {
+    // Contar la cantidad de dígitos del número
+    int contador = 0;
+    int temp = numero;
+    
+    while (temp != 0) {
+        temp /= 10;
+        contador++;
+    }
+    
+    // Validar si tiene 6 dígitos
+    if (contador == 6) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
