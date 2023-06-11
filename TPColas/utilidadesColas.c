@@ -141,3 +141,27 @@ void c_cargar_no_repetidos(Cola cola, int cantidad){
     }
     
 }
+
+void c_cargar_mayores_no_rep(Cola cola, int cantidad,int limite){
+    TipoElemento clave;
+    int i = 0;
+    bool encontrado;
+    if(cantidad<=TAMANIO_MAXIMO){
+      while (!c_es_llena(cola) && i < cantidad) {
+        clave=te_crear(0);
+        printf("Ingrese la clave a encolar: ");
+        scanf("%d", &clave->clave);
+        encontrado=c_buscar_clave(cola,clave->clave);
+        if(!encontrado&&clave->clave>limite){
+            c_encolar(cola, clave);
+            i++;  
+        }else{
+            printf("no puede ingresar elementos repetidos o menores a 2\n");
+        }
+        
+    }  
+    }else{
+        printf("no se puede cargar mas elementos que el tamaño maximo\n");
+    }
+    
+}
