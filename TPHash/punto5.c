@@ -93,5 +93,5 @@ int main() {
     
 }
 /*
-se puede concluir que al buscar mas claves la tabla hash tarda menos que el arbol avl
+se puede concluir que al buscar mas claves la tabla hash con colisiones tarda menos que el arbol avl mientras que la tabla hash con zona de overflow tarda mas que el arbol avl
 */
