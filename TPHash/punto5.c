@@ -4,7 +4,7 @@
 #include <time.h>
 #include "punto5.h"
 #include "valida.h"
-#include "arbol-avl.h"
+
 
 #define TAMANO_TABLA 2000
 
