@@ -1,6 +1,7 @@
 #ifndef punto4_H
 #define punto4_H
 #include <stdbool.h>
+#include <stdint.h>
 #include "listas.h"
 
 typedef struct {

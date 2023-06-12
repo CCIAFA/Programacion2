@@ -98,7 +98,7 @@ int main() {
 
         if (te != NULL) {
             // Leer el registro correspondiente al legajo en el archivo
-            fseek(archivo, (long int)te->valor, SEEK_SET);
+            fseek(archivo, (uintptr_t)te->valor, SEEK_SET);
             Alumno alumno;
             fread(&alumno, sizeof(Alumno), 1, archivo);
 
