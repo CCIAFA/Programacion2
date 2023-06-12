@@ -5,12 +5,6 @@
 #include "punto5.h"
 #include "valida.h"
 #include "arbol-avl.h"
-#include "tabla_hash_lista_colisiones.c"
-#include "listas_arreglos.c"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-#include "arbol-avl.c"
-
 
 #define TAMANO_TABLA 2000
 
