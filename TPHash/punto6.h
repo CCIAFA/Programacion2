@@ -1,30 +1,16 @@
-#ifndef PUNTO6_H
-#define PUNTO6_H
+#ifndef punto6_H
+#define punto6_H
 #include <stdbool.h>
-#include <stdint.h>
-#include <time.h>
 #include "listas.h"
 
 typedef struct {
     int dni;
     char apellido[50];
     char nombre[50];
-} Persona;
+    char fecha[11];
+} vacunado;
 
-typedef struct{
-    unsigned short int dia;
-    unsigned short int mes;
-    unsigned short int anio;
-} Fecha;
-
-int menu();
-
-void cargar();
-void mostrar();
-
-Persona cargarPersona();
-void mostrarPersona(Persona persona);
-
-Fecha cargarFecha();
-void mostrarFecha(Fecha fecha);
-#endif // PUNTO6
+vacunado cargarPaciente();
+void mostrarPacientesEnFecha(vacunado pacientes[], int cantidad);
+int funcionHash(int fecha);
+#endif 
