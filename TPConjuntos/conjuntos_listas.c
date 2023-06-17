@@ -96,5 +96,5 @@ TipoElemento cto_recuperar(Conjunto conjunto, int posicion_ordinal){
 }
 
 void cto_mostrar(Conjunto conjunto){
-    l_mostrar(conjunto->lista);
+    l_mostrarLista(conjunto->lista);
 }
