@@ -52,7 +52,7 @@ void unioninta(NodoArbol q, Conjunto rta) {
 void unionintb(NodoArbol q, Conjunto rta) {
     if (!avl_es_rama_nula(q)){
         unionintb(n_hijoizquierdo(q), rta);
-        if (!cto_pertenece(rta, n_recuperar(q))) {
+        if (!cto_pertenece(rta, n_recuperar(q)->clave)) {
             cto_agregar(rta, n_recuperar(q));
         }
         unionintb(n_hijoderecho(q), rta);
