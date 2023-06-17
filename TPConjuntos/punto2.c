@@ -6,13 +6,7 @@
 #include "punto2.h"
 #include "valida.h"
 #include "utilidadesConjuntos.h"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-#include "utilidadesConjuntos.c"
-#include "conjuntos_avl.c"
-#include "listas_arreglos.c"
-#include "nodo.c"
-#include "arbol-avl.c"
+
 
 Conjunto ctoUniones(Conjunto conj1,Conjunto conj2){
     int i,j;
