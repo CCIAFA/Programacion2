@@ -3,16 +3,10 @@
 #include <stdbool.h>
 #include <string.h>
 #include <ctype.h>
-#include "punto4.h"
+#include "punto5.h"
 #include "valida.h"
 #include "utilidadesConjuntos.h"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-#include "utilidadesConjuntos.c"
-#include "conjuntos_avl.c"
-#include "listas_arreglos.c"
-#include "nodo.c"
-#include "arbol-avl.c"
+
 
 Conjunto cto_diferencia_simetrica(Conjunto conj1,Conjunto conj2){
     int i;
