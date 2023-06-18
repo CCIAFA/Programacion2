@@ -50,5 +50,5 @@ int main(){
         }else{printf("ninguno es subconjunto del otro\n");}
     }
     
-    
+    printf("complejidad o(n^2)");
 }
