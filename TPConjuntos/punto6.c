@@ -28,11 +28,11 @@ int main(){
     conj1= cto_crear();
     printf("conjunto A:\n");
     ingresarNumero("\ningrese la cantidad de elementos que quiera cargar: ",&clave);
-    cto_cargar(conj1,clave);
+    cto_cargar_no_repetidos(conj1,clave);
     conj2= cto_crear();
     printf("\nconjunto B:\n");
     ingresarNumero("\ningrese la cantidad de elementos que quiera cargar: ",&clave);
-    cto_cargar(conj2,clave);
+    cto_cargar_no_repetidos(conj2,clave);
     if(cto_cantidad_elementos(conj1)<cto_cantidad_elementos(conj2)){
         res=cto_subconjuntos(conj1,conj2);
         if(res){
