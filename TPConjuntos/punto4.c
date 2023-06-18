@@ -12,7 +12,7 @@ bool ctoSubconjuntos(Conjunto conj1,Conjunto conj2,Conjunto conj3){
     bool subCbc=true;
     int i=1;
     TipoElemento x;
-    while(subCab&&i<cto_cantidad_elementos(conj1)){
+    while(subCab&&i<=cto_cantidad_elementos(conj1)){
         x=cto_recuperar(conj1,i);
         if(!cto_pertenece(conj2,x->clave)){
             subCab=false;
@@ -20,7 +20,7 @@ bool ctoSubconjuntos(Conjunto conj1,Conjunto conj2,Conjunto conj3){
         i++;
     }
     i=1;
-    while(subCbc&&i<cto_cantidad_elementos(conj2)){
+    while(subCbc&&i<=cto_cantidad_elementos(conj2)){
         x=cto_recuperar(conj2,i);
         if(!cto_pertenece(conj3,x->clave)){
             subCbc=false;
