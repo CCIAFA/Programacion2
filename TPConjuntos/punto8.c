@@ -6,14 +6,6 @@
 #include "punto8.h"
 #include "valida.h"
 #include "utilidadesConjuntos.h"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-#include "utilidadesConjuntos.c"
-#include "conjuntos_avl.c"
-#include "listas_arreglos.c"
-#include "nodo.c"
-#include "arbol-avl.c"
-
 
 bool cto_son_iguales(Conjunto conj1,Conjunto conj2){
     bool res=true;
