@@ -6,15 +6,6 @@
 #include "punto4.h"
 #include "valida.h"
 #include "utilidadesConjuntos.h"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-#include "utilidadesConjuntos.c"
-#include "conjuntos_avl.c"
-#include "listas_arreglos.c"
-#include "nodo.c"
-#include "arbol-avl.c"
-
-
 
 bool ctoSubconjuntos(Conjunto conj1,Conjunto conj2,Conjunto conj3){
     bool subCab =true;
