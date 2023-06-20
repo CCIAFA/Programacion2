@@ -6,11 +6,6 @@
 #include "punto7.h"
 #include "valida.h"
 #include "utilidadesConjuntos.h"
-#include "Tipo_Elemento.c"
-#include "validaciones.c"
-#include "utilidadesConjuntos.c"
-#include "conjuntos_listas.c"
-#include "listas_arreglos.c"
 
 int cto_es_subconjunto(Conjunto conj1,Conjunto conj2){
     int i=1;
