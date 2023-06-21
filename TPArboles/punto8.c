@@ -55,8 +55,6 @@ int an_nivel(ArbolBinario a,int n){
 
 void nodosint(NodoArbol nodo,Lista l,ArbolBinario a){
     TipoElemento x;
-    int altura;
-    bool primero=true;
     if(nodo==NULL){
     }else{
         if((n_hijoizquierdo(nodo)==NULL)||(a_raiz(a)==nodo)){ 
@@ -73,6 +71,7 @@ void nodosint(NodoArbol nodo,Lista l,ArbolBinario a){
 Lista an_nodos_internos(ArbolBinario a){
     Lista l = l_crear();
     nodosint(a_raiz(a),l,a);
+    return l;
 }
 
 bool hojasAlMismoNivelint(NodoArbol nodo, int nivel, int *nivelHoja) {
