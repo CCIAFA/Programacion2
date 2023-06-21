@@ -130,7 +130,7 @@ int main() {
     cargar_arbol(a);
     i=an_altura(a);
     if(i==-1){
-        printf("se ingreso un arbol vacio\n");
+        printf("se ingreso un arbol vacio no tiene una altura\n");
     }else{
         printf("la altura del arbol es: %d\n",i); 
     }
