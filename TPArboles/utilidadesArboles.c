@@ -24,8 +24,8 @@ void alturaint(NodoArbol n,int *h,int c){
             *h=c;
         }
     }else{
-        alturaint(n_hijoizquierdo(n),h,c++);
-        alturaint(n_hijoderecho(n),h,c++);
+        alturaint(n_hijoizquierdo(n),h,c+1);
+        alturaint(n_hijoderecho(n),h,c+1);
     }
 }
 
