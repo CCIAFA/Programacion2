@@ -39,5 +39,5 @@ int main() {
     in_orden(avl_raiz(avl));
     i=avl_altura(avl);
     printf("\nla altura del arbol avl es %d\n",i);
-    printf("la complejidad es O(log n) por el avl_insertar");
+    printf("la complejidad es O(n log n) por el avl_insertar");
 }
