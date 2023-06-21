@@ -8,10 +8,10 @@
 
 int altura_int(NodoArbol n) {
     if (n == NULL) {
-        return 0;
+        return -1;
     }
 
-    int altura_max = -1;
+    int altura_max = 0;
     NodoArbol hijo = n_hijoizquierdo(n);
 
     while (hijo != NULL) {
