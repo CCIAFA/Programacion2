@@ -76,9 +76,9 @@ Lista an_nodos_internos(ArbolBinario a){
 }
 
 bool hojasAlMismoNivelint(NodoArbol nodo, int nivel, int *nivelHoja) {
-    if (nodo == NULL)
-        return true;
-
+    if (nodo == NULL){
+        return false;
+    }
     // Si el nodo actual es una hoja
     if (nodo->hi == NULL) {
         // Si aún no se ha establecido el nivel de las hojas
