@@ -142,6 +142,7 @@ int main() {
         printf("el nivel de la clave es %d\n",i);
     }
     lis=an_nodos_internos(a);
+    printf("los nodos internos son:\n");
     l_mostrarLista(lis);
     res=an_hojasAlMismoNivel(a_raiz(a));
     if(res){
