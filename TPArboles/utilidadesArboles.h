@@ -8,6 +8,7 @@
 void in_orden(NodoArbol N);
 int a_altura(ArbolBinario a);
 int avl_altura(ArbolAVL avl);
+int abb_altura(ArbolBinarioBusqueda abb);
 NodoArbol buscar_nodo(NodoArbol nodo, int clave);
 void cargar_arbol(ArbolBinario a);
 
