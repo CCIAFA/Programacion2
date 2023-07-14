@@ -206,7 +206,7 @@ TipoElemento l_recuperar(Lista lista, int pos) {
     return lista->cursor[temp2].datos;
 }
 
-void l_mostrar(Lista lista) {
+void l_mostrarLista(Lista lista) {
     int temp2 = lista->inicio;
     printf("Contenido de la lista: ");
     while (temp2 != NULO) {
